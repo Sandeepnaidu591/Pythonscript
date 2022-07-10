@@ -28,5 +28,5 @@ for s3_files in my_bucket.objects.all():
 
      print(s3_files.key)
 
-my_bucket.download_file('visualizer_enterprise/90/plugins/com.kony.cloudmiddleware_9.2.0.DEV_v202102112200_r0.jar.md5','./com.kony.cloudmiddleware_9.2.0.DEV_v202102112200_r0.jar.md5')
+my_bucket.download_file('visualizer_enterprise/90/plugins/com.kony.cloudthirdparty_9.2.0.QA_v202105271043_r5.jar','./com.kony.cloudthirdparty_9.2.0.QA_v202105271043_r5.jar')
 
