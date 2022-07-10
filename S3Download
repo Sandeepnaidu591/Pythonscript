@@ -27,9 +27,6 @@ my_bucket = s3.Bucket(bucket)
 for s3_files in my_bucket.objects.all():
 
      print(s3_files.key)
-version = input("Enter input: ")
 
-my_bucket.download_file('visualizer_enterprise/90/plugins/com.kony.cloudmiddleware_'+version+'.DEV_v202102112200_r0.jar.md5','./com.kony.cloudmiddleware_9.2.0.DEV_v202102112200_r0.jar.md5')
-
-my_bucket.download_file('visualizer_enterprise/90/plugins/com.kony.cloudthirdparty_'+version+'.DEV_v202102112200_r0.jar.md5','./com.kony.cloudthirdparty_9.2.0.DEV_v202102112200_r0.jar.md5')
+my_bucket.download_file('visualizer_enterprise/90/plugins/com.kony.cloudmiddleware_9.2.0.DEV_v202102112200_r0.jar.md5','./com.kony.cloudmiddleware_9.2.0.DEV_v202102112200_r0.jar.md5')
 
